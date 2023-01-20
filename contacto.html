@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+   
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+   
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="css/style.css">
+    
+<body>
+        <div class="container">
+                <div class="volver">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#F55AA5;"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                    <a href="index.htm">Volver</a>
+                </div>
+
+                <h1 class="logo">formulario de  <span>Contacto</span></h1>
+        
+                <main>
+                    <!-- FORMULARIO -->
+                    <form action="#" class="formulario" id="formulario" >
+                     <!-- GRUPO DE NOMBRE-->
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <label class="formulario__label">Nombre y Apellido</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre">
+                               
+                            </div>
+                            <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                        </div>
+                
+                        <!-- GRUPO DE EMAIL -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                            <label class="formulario__label">Correo Electonico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" >
+                               
+                            </div>
+                            <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+                        </div>
+                
+                
+                        <!-- GRUPO DE TELÉFONO -->
+                        <div class="formulario__grupo" id="grupo__telefono">
+                            <label class="formulario__label">Teléfono</label>
+                            <div class="formulario__grupo-input">
+                                <input type="telefono" class="formulario__input" name="telefono" id="telefono" >
+                               
+                            </div>
+                            <p class="formulario__input-error">El número debe tener 10 digitos</p>
+                        </div>
+                
+                        <!-- GRUPO DE ASUNTO-->
+                        <div class="formulario__grupo" id="grupo__asunto">
+                            <label class="formulario__label">Asunto</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="asunto" id="asunto" >
+                               
+                            </div>
+                            <p class="formulario__input-error">El asunto debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                        </div>
+                
+                         <!-- GRUPO DE MENSAJE-->
+                         <div class="formulario__grupo block " id="grupo__mensaje">
+                            <label class="formulario__label">Mensaje</label>
+                            <div class="formulario__grupo-input ">
+                                <textarea  name="mensaje" id="mensaje" rows="8" cols="10" ></textarea>
+                               
+                            </div>
+                            <p class="formulario__input-error">El mensaje debe tener minimo 4 caracteres.</p>
+                        </div>
+                
+                      
+                        
+                        <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+                        </div>
+                
+                
+                        <!-- GRUPO ENVIAR -->
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+                            <input class="formulario__btn" type="submit" value="Enviar Mensaje">
+                        </div>
+                    </form>
+                </main>
+                
+<script src="js/app.js"></script>
+</body>
+
+</html>
